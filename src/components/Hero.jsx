@@ -92,21 +92,22 @@ export default function Hero() {
           
           {/* Experience Badge */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1 }}
-            className="absolute -right-4 top-1/4 z-10 glass rounded-2xl p-4 shadow-2xl"
+            initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ delay: 1, type: "spring", stiffness: 80 }}
+            className="absolute -right-2 bottom-4 lg:-right-6 lg:bottom-10 z-20 glass rounded-full w-28 h-28 lg:w-36 lg:h-36 flex flex-col items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.4)] border border-white/10 hover:border-primary-500/50 hover:scale-105 transition-all duration-500 group/badge"
           >
-            <span className="block text-3xl font-bold text-white">4+</span>
-            <span className="text-xs text-slate-400 uppercase tracking-widest">Years Experience</span>
+            <span className="text-3xl lg:text-4xl font-black text-white leading-none group-hover/badge:text-primary-400 transition-colors">4+</span>
+            <span className="text-[10px] lg:text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Years</span>
+            <span className="text-[10px] lg:text-xs text-primary-500 font-black uppercase tracking-widest">Exp.</span>
           </motion.div>
 
-          <div className="w-full h-full rounded-[2.5rem] bg-slate-900 border-2 border-white/5 shadow-2xl overflow-hidden relative group">
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
+          <div className="w-full h-full rounded-full bg-slate-900 border-4 border-white/10 shadow-2xl overflow-hidden relative group">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60 z-10" />
             <img 
               src={profilePic} 
               alt="Abdul Qayyum Waseem Khan"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
             />
           </div>
         </motion.div>

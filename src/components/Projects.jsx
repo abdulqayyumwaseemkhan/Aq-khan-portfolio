@@ -7,7 +7,7 @@ import msschoolImg from "../assets/msschool.png";
 import fixonicImg from "../assets/fixonic.png";
 import zarqImg from "../assets/zarq.png";
 import livestockImg from "../assets/livestock.png";
-import bookwormImg from "../assets/bookworm.png";
+
 import meemImg from "../assets/meem.png";
 
 const projects = [
