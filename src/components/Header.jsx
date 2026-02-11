@@ -7,6 +7,7 @@ const navLinks = [
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "CV", href: "https://drive.google.com/file/d/1wrZ2HpqKJKs4zQFJzeg5bXomzuek0Ecc/view?usp=sharing", isExternal: true },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -44,13 +45,15 @@ export default function Header() {
             <motion.a
               key={link.name}
               href={link.href}
+              target={link.isExternal ? "_blank" : undefined}
+              rel={link.isExternal ? "noopener noreferrer" : undefined}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="text-sm font-medium text-slate-400 hover:text-white transition-colors relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full" />
+              {!link.isExternal && <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full" />}
             </motion.a>
           ))}
           <motion.div
@@ -89,6 +92,8 @@ export default function Header() {
                 <a
                   key={link.name}
                   href={link.href}
+                  target={link.isExternal ? "_blank" : undefined}
+                  rel={link.isExternal ? "noopener noreferrer" : undefined}
                   onClick={() => setIsOpen(false)}
                   className="text-xl font-medium text-slate-300 hover:text-white"
                 >
