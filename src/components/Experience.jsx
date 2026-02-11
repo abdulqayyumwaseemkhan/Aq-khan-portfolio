@@ -10,6 +10,14 @@ const experience = [
     type: "Mentorship",
   },
   {
+    role: "IT Instructor",
+    company: "Mohammadan Computer College",
+    period: "Feb 2025 - Feb 2026",
+    description: "Successfully trained 3 cohorts through intensive courses in Basic IT, Graphic Design, and Web Development. Focused on career-oriented training and project-based learning.",
+    type: "Mentorship",
+  },
+  
+  {
     role: "Computer Teacher",
     company: "Merit Model High School Julkay Lahore",
     period: "2-Year Term",
