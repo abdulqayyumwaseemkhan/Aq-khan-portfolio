@@ -7,7 +7,7 @@ const navLinks = [
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
-  { name: "CV", href: "https://drive.google.com/file/d/1wrZ2HpqKJKs4zQFJzeg5bXomzuek0Ecc/view?usp=sharing", isExternal: true },
+  { name: "CV", href: "https://drive.google.com/file/d/1063PJF4dqDAQBaaue2ffBjyi1kFHA8dn/view?usp=sharing", isExternal: true },
   { name: "Contact", href: "#contact" },
 ];
 

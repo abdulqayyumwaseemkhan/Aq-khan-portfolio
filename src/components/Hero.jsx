@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Mail, Linkedin, ArrowRight, Download } from "lucide-react";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile.png";
 
 export default function Hero() {
   const linkedinUrl = "https://www.linkedin.com/in/abdul-qayyum-waseem-khan-027663335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
@@ -28,11 +28,11 @@ export default function Hero() {
               <span className="text-gradient">Waseem Khan</span>
             </h1>
             <p className="text-xl lg:text-2xl text-slate-400 max-w-2xl font-light leading-relaxed">
-              Full Stack Developer <span className="text-slate-600">|</span> MERN Stack Specialist <br /> 
-              UI/UX Designer <span className="text-slate-600">|</span> IT Instructor
+              Frontend Developer <span className="text-slate-600">|</span> MERN Stack Developer <br /> 
+              React Native Developer
             </p>
             <p className="text-lg text-slate-500 max-w-xl">
-              Building Scalable Digital Solutions with Design Intelligence & Technical Excellence.
+              Professional developer, mentor, and IT manager dedicated to building high-performance web and mobile applications.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function Hero() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1wrZ2HpqKJKs4zQFJzeg5bXomzuek0Ecc/view?usp=sharing"
+              href="https://drive.google.com/file/d/1063PJF4dqDAQBaaue2ffBjyi1kFHA8dn/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { User, Code2, Palette, Users2 } from "lucide-react";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/profile.png";
 
 export default function About() {
   const highlights = [
-    { icon: <Code2 className="text-blue-400" />, title: "Full Stack Expert", desc: "Specializing in MERN stack for scalable solutions." },
-    { icon: <Palette className="text-purple-400" />, title: "Design Intel", desc: "Crafting intuitive UI/UX with modern aesthetics." },
-    { icon: <Users2 className="text-orange-400" />, title: "Lead Mentor", desc: "Guiding 500+ students in their tech journey." },
+    { icon: <Code2 className="text-blue-400" />, title: "MERN & React Native", desc: "Building scalable web and mobile solutions." },
+    { icon: <Palette className="text-purple-400" />, title: "IT Infrastructure", desc: "Managing complete IT systems and operations." },
+    { icon: <Users2 className="text-orange-400" />, title: "Technical Mentor", desc: "Empowering students with industry-ready skills." },
   ];
 
   return (
@@ -22,13 +22,16 @@ export default function About() {
 
           <div className="space-y-6 text-lg text-slate-400 leading-relaxed font-light">
             <p>
-              I am <span className="text-white font-medium">Abdul Qayyum Waseem Khan</span>, a visionary Full Stack Developer and IT Instructor dedicated to bridging the gap between design intelligence and technical excellence. With a strong foundation in the MERN stack and a passion for UI/UX, I build digital ecosystems that are not just functional, but transformative.
+              I am <span className="text-white font-medium">Abdul Qayyum Waseem Khan</span>, a dedicated professional specialized in Frontend Development, MERN Stack, and React Native. With a vision for technical excellence, I architect digital solutions that drive innovation and solve real-world problems.
             </p>
             <p>
-              My journey is defined by a unique combination of <span className="text-white font-medium">technical leadership and educational impact</span>. As a mentor at BanoQabil Lahore, I've had the privilege of shaping the careers of aspiring developers, translating complex concepts into actionable skills.
+              My expertise spans across <span className="text-white font-medium">full-stack web development and cross-platform mobile apps</span>. Beyond coding, I serve as an IT Manager, handling complete technology infrastructures and maintaining robust systems for educational and corporate environments.
             </p>
             <p>
-              Whether it's architecting scalable web applications or designing pixel-perfect user interfaces, I approach every project with a commitment to <span className="text-white font-medium">quality, innovation, and strategic thinking</span>. My goal is to create digital solutions that drive value and resonate with users on an international level.
+              As a mentor at <span className="text-white font-medium">Banoqabil Lahore</span>, I am passionate about bridging the gap between education and industry. I train students in modern web technologies, helping them build professional portfolios and succeed in the freelancing world.
+            </p>
+            <p className="text-white font-bold text-xl pt-4 italic border-l-4 border-primary-500 pl-6">
+              "Focused on building real-world solutions and helping students become industry-ready developers."
             </p>
           </div>
 

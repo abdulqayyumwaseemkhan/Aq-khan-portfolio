@@ -3,33 +3,25 @@ import { Briefcase, Calendar, Users } from "lucide-react";
 
 const experience = [
   {
-    role: "Mentor",
-    company: "BanoQabil Lahore",
+    role: "Frontend Development Mentor",
+    company: "Banoqabil Lahore",
     period: "2024 - Present",
-    description: "Graphic Design Mentor (First 2 Batches) & Web Development (Front-End) Mentor (Previous & Current Batch). Leading and mentoring hundreds of students in modern web technologies.",
+    description: "Teaching HTML, CSS, JavaScript, and React JS. Training students on real-world projects while helping them build professional portfolios and freelancing skills.",
     type: "Mentorship",
   },
   {
-    role: "IT Instructor",
-    company: "Mohammadan Computer College",
-    period: "Feb 2025 - Feb 2026",
-    description: "Successfully trained 3 cohorts through intensive courses in Basic IT, Graphic Design, and Web Development. Focused on career-oriented training and project-based learning.",
-    type: "Mentorship",
-  },
-  
-  {
-    role: "Computer Teacher",
-    company: "Merit Model High School Julkay Lahore",
-    period: "2-Year Term",
-    description: "Teaching Computer Science concepts, programming basics, and IT literacy to high school students.",
-    type: "Teaching",
+    role: "Web & IT Manager",
+    company: "Mohammadan Group of Institutes",
+    period: "2023 - Present",
+    description: "Managing complete web and IT infrastructure. Developing and maintaining websites and systems while handling IT operations and technical management.",
+    type: "Management",
   },
   {
-    role: "Computer & IT Teacher",
-    company: "Govt Girls High School Kacha Lahore",
-    period: "2-Year Term",
-    description: "Empowering students with essential IT skills and vocational training in computer applications.",
-    type: "Teaching",
+    role: "Independent MERN Stack & React Native Developer",
+    company: "Self-Employed",
+    period: "2022 - Present",
+    description: "Building full-stack web applications using MongoDB, Express, React, and Node.js. Developing cross-platform mobile apps using React Native for real-world and personal projects.",
+    type: "Development",
   },
 ];
 
@@ -76,9 +68,9 @@ export default function Experience() {
                 {item.description}
               </p>
               
-              {item.role === "Mentor" && (
+              {item.role.includes("Mentor") && (
                 <div className="flex items-center gap-2 text-primary-400 text-sm font-semibold">
-                  <Users size={16} /> Impacting next generation of developers
+                  <Users size={16} /> Impacting the next generation of developers
                 </div>
               )}
             </div>

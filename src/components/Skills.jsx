@@ -5,27 +5,36 @@ import {
   SiAdobeillustrator, SiFigma, SiCanva, SiAdobepremierepro, 
   SiAdobeaftereffects, SiAdobe, SiBlender 
 } from "react-icons/si";
-import { FileText, Table, Presentation, Smartphone } from "lucide-react";
+import { Code2, Smartphone, FileText, Table, Presentation } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Web Development",
+    title: "Frontend Development",
     skills: [
       { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
       { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
       { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
       { name: "React.js", icon: <SiReact className="text-cyan-400" /> },
-      { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
-      { name: "Express.js", icon: <SiExpress className="text-white" /> },
-      { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
-      { name: "React Native", icon: <Smartphone className="text-cyan-500" /> },
-      { name: "Git", icon: <SiGit className="text-orange-600" /> },
-      { name: "GitHub", icon: <SiGithub className="text-white" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+      { name: "Bootstrap", icon: <SiTailwindcss className="text-purple-500" /> },
     ],
   },
   {
-    title: "Design & Creative",
+    title: "Backend Development",
+    skills: [
+      { name: "Node.js", icon: <SiNodedotjs className="text-green-500" /> },
+      { name: "Express.js", icon: <SiExpress className="text-white" /> },
+      { name: "MongoDB", icon: <SiMongodb className="text-green-600" /> },
+    ],
+  },
+  {
+    title: "Mobile Development",
+    skills: [
+      { name: "React Native", icon: <Smartphone className="text-cyan-500" /> },
+    ],
+  },
+  {
+    title: "Design & Editing",
     skills: [
       { name: "Photoshop", icon: <SiAdobephotoshop className="text-blue-600" /> },
       { name: "Illustrator", icon: <SiAdobeillustrator className="text-orange-700" /> },
@@ -33,17 +42,19 @@ const skillCategories = [
       { name: "Canva", icon: <SiCanva className="text-cyan-400" /> },
       { name: "Premiere Pro", icon: <SiAdobepremierepro className="text-purple-800" /> },
       { name: "After Effects", icon: <SiAdobeaftereffects className="text-purple-900" /> },
-      { name: "Filmora", icon: <SiAdobe className="text-red-500" /> },
       { name: "Blender", icon: <SiBlender className="text-orange-500" /> },
       { name: "InPage", icon: <FileText className="text-blue-500" /> },
     ],
   },
   {
-    title: "Productivity",
+    title: "Productivity & Tools",
     skills: [
       { name: "MS Word", icon: <FileText className="text-blue-700" /> },
       { name: "MS Excel", icon: <Table className="text-green-700" /> },
       { name: "MS PowerPoint", icon: <Presentation className="text-orange-600" /> },
+      { name: "Git", icon: <SiGit className="text-orange-600" /> },
+      { name: "GitHub", icon: <SiGithub className="text-white" /> },
+      { name: "REST APIs", icon: <Code2 className="text-blue-400" /> },
     ],
   },
 ];

@@ -9,8 +9,34 @@ import zarqImg from "../assets/zarq.png";
 import livestockImg from "../assets/livestock.png";
 
 import meemImg from "../assets/meem.png";
+import hypercareImg from "../assets/hypercare_ai.png";
+import kissanpartsImg from "../assets/kissanparts.png";
+import cvbuilderImg from "../assets/cvbuilder.png";
 
 const projects = [
+  {
+    title: "Hyper Care AI",
+    url: "#",
+    tags: ["React Native", "AI Healthcare", "Mobile App"],
+    desc: "An AI-powered healthcare mobile application designed for diagnostic assistance and patient monitoring, built with React Native for cross-platform performance.",
+    image: hypercareImg,
+    isApp: true,
+  },
+  {
+    title: "Livestock Management System",
+    url: "#",
+    tags: ["React Native", "AgriTech", "Management"],
+    desc: "A specialized mobile app for farmers to manage animal health records, breeding cycles, and farm operations with offline-first capabilities.",
+    image: livestockImg,
+    isApp: true,
+  },
+  {
+    title: "Zarq Online",
+    url: "https://zarq1.vercel.app",
+    tags: ["Product Brand", "React", "E-commerce"],
+    desc: "A premium online product brand offering optimized digital solutions. This project showcases the brand's digital presence with a focus on high-speed performance.",
+    image: zarqImg,
+  },
   {
     title: "Meem Jewel Style",
     url: "https://meem-jewel-style.vercel.app",
@@ -19,40 +45,39 @@ const projects = [
     image: meemImg,
   },
   {
-    title: "Livestock Management App",
-    url: "#",
-    tags: ["Mobile App", "React Native", "Expo"],
-    desc: "A mission-critical mobile application for farm owners to manage animal health, breeding cycles, and digital ledgers with offline-first synchronization.",
-    image: livestockImg,
-    isApp: true,
+    title: "Fixonic",
+    url: "https://fixonic.vercel.app",
+    tags: ["React JS", "Modern UI", "Service platform"],
+    desc: "A clean and modern professional service website showcasing premium design standards and high-performance React implementation.",
+    image: fixonicImg,
   },
   {
-    title: "Zarq Properties",
-    url: "https://zarq1.vercel.app",
-    tags: ["Real Estate", "React", "Tailwind"],
-    desc: "A premium real estate platform featuring advanced search filters, property listings, and responsive design for high-end property management.",
-    image: zarqImg,
-  },
-  {
-    title: "MCC College Portal",
+    title: "MCC College Website",
     url: "https://mccollege.vercel.app",
-    tags: ["Education", "MERN Stack", "Auth"],
-    desc: "Comprehensive college management portal handling admissions, result tracking, and student fee management with a smooth UI.",
+    tags: ["Education", "MERN Stack", "Portal"],
+    desc: "A full-scale educational management platform handling student results, admissions, and course management with a seamless user experience.",
     image: mccollegeImg,
   },
   {
-    title: "Mohammadan School",
+    title: "Mohammadan School System",
     url: "https://mohammadan-school.vercel.app",
-    tags: ["React", "Management", "UI/UX"],
-    desc: "A modern school portal designed for seamless communication between staff and parents, focusing on usability and accessibility.",
+    tags: ["React", "School Portal", "Management"],
+    desc: "A comprehensive web portal for the Mohammadan School System, focusing on efficient administration and user-friendly communication interfaces.",
     image: msschoolImg,
   },
   {
-    title: "Fixonic Web Application",
-    url: "https://fixonic.vercel.app",
-    tags: ["SaaS", "Dashboard", "React"],
-    desc: "Enterprise-grade web application for resource management and business process optimization.",
-    image: fixonicImg,
+    title: "KissanParts.pk",
+    url: "#",
+    tags: ["New Project", "E-commerce", "React"],
+    desc: "A robust e-commerce platform for agricultural machinery and spare parts. Currently under development with a focus on high-speed performance.",
+    image: kissanpartsImg,
+  },
+  {
+    title: "CV Builder Web App",
+    url: "#",
+    tags: ["New Project", "React JS", "Resume Tools"],
+    desc: "A professional tools platform for building ATS-friendly CVs and resumes, featuring interactive templates and real-time editing features.",
+    image: cvbuilderImg,
   },
 ];
 

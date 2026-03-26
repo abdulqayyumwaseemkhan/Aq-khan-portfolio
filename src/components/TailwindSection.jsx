@@ -3,12 +3,12 @@ import { SiTailwindcss } from "react-icons/si";
 import { Layout, Smartphone, Palette, Code, Boxes, Layers } from "lucide-react";
 
 const features = [
-  { icon: <Layout size={24} />, title: "Responsive Grid Systems", desc: "Complex 12-column layouts that adapt flawlessly from mobile to ultra-wide screens." },
-  { icon: <Layers size={24} />, title: "Dashboard UI", desc: "Data-heavy interfaces with consistent spacing and modular component architecture." },
-  { icon: <Code size={24} />, title: "Advanced Forms", desc: "Custom-styled input systems with validation states and interactive feedback." },
-  { icon: <Boxes size={24} />, title: "Admin Panels", desc: "Scalable dashboard systems with sidebar navigation and dynamic content areas." },
-  { icon: <Smartphone size={24} />, title: "Mobile-First Design", desc: "Prioritizing mobile utility and performance before scaling to desktop." },
-  { icon: <Palette size={24} />, title: "Design Systems", desc: "Implementing consistent typography scales and custom brand palettes." },
+  { icon: <Layout size={24} />, title: "Full Stack Applications", desc: "Developing complete web applications using MERN stack with frontend and backend integration." },
+  { icon: <Layers size={24} />, title: "API Development", desc: "Building and integrating REST APIs for dynamic and scalable applications." },
+  { icon: <Code size={24} />, title: "React Applications", desc: "Creating modern, responsive user interfaces using React JS." },
+  { icon: <Boxes size={24} />, title: "Admin Dashboards", desc: "Developing dynamic admin panels with data management and control systems." },
+  { icon: <Smartphone size={24} />, title: "Mobile App Development", desc: "Building cross-platform mobile apps using React Native." },
+  { icon: <Palette size={24} />, title: "Real-World Projects", desc: "Focused on solving real problems through practical and production-level applications." },
 ];
 
 export default function TailwindSection() {
@@ -22,25 +22,26 @@ export default function TailwindSection() {
           <div className="lg:col-span-2 space-y-8">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-cyan-400 font-bold tracking-widest uppercase text-xs">
-                <SiTailwindcss size={24} /> UI Architecture
+                <Code size={24} /> Development Focus
               </div>
               <h2 className="text-4xl lg:text-5xl font-black text-white leading-tight">
-                Advanced <span className="text-cyan-400">Tailwind CSS</span> & Modern Systems
+                MERN Stack <span className="text-cyan-400">Development</span> & Modern Applications
               </h2>
             </div>
             
             <p className="text-slate-400 text-lg leading-relaxed">
-              I specialize in building modern, scalable UI systems using Tailwind CSS with a strong focus on performance, responsiveness, and clean component architecture.
+              I build real-world web and mobile applications using MERN stack and React Native, focusing on performance, scalability, and practical solutions.
             </p>
 
             <div className="space-y-4 pt-4">
-              <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">Workflow Expertise</p>
+              <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">Expertise</p>
               <ul className="space-y-3">
                 {[
-                  "Utility-first architectural workflow",
-                  "Custom configuration & theme extension",
-                  "Dark mode & multi-theme implementation",
-                  "Optimized production builds (PurgeCSS/JIT)",
+                  "Full-stack development using MongoDB, Express, React, Node.js",
+                  "Building scalable and responsive web applications",
+                  "REST API development and integration",
+                  "Cross-platform mobile app development (React Native)",
+                  "Real-world project-based development approach",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-white font-medium">
                     <div className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
