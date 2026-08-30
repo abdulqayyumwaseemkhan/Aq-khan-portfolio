@@ -4,9 +4,9 @@ import profilePic from "../assets/profile.png";
 
 export default function About() {
   const highlights = [
-    { icon: <Code2 className="text-blue-400" />, title: "MERN & React Native", desc: "Building scalable web and mobile solutions." },
-    { icon: <Palette className="text-purple-400" />, title: "IT Infrastructure", desc: "Managing complete IT systems and operations." },
-    { icon: <Users2 className="text-orange-400" />, title: "Technical Mentor", desc: "Empowering students with industry-ready skills." },
+    { icon: <Code2 className="text-blue-600" />, title: "MERN & React Native", desc: "Building scalable web & cross-platform mobile solutions." },
+    { icon: <Palette className="text-purple-600" />, title: "IT Infrastructure", desc: "Managing comprehensive IT systems and network operations." },
+    { icon: <Users2 className="text-emerald-600" />, title: "Technical Mentor", desc: "Empowering developers with real-world industry skills." },
   ];
 
   return (
@@ -14,24 +14,24 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
         <div className="lg:col-span-3 space-y-8">
           <div className="space-y-4">
-            <h2 className="text-4xl lg:text-5xl font-black text-white">
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-900">
               About <span className="text-gradient">Me</span>
             </h2>
-            <div className="h-1.5 w-24 bg-gradient-to-r from-primary-500 to-emerald-500 rounded-full" />
+            <div className="h-1.5 w-24 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full" />
           </div>
 
-          <div className="space-y-6 text-lg text-slate-400 leading-relaxed font-light">
+          <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
             <p>
-              I am <span className="text-white font-medium">Abdul Qayyum Waseem Khan</span>, a dedicated professional specialized in Frontend Development, MERN Stack, and React Native. With a vision for technical excellence, I architect digital solutions that drive innovation and solve real-world problems.
+              I am <span className="text-slate-900 font-semibold">Abdul Qayyum Waseem Khan</span>, a dedicated professional specialized in Frontend Development, MERN Stack, and React Native. With a relentless focus on clean code and user experience, I architect digital solutions that drive innovation and solve real-world problems.
             </p>
             <p>
-              My expertise spans across <span className="text-white font-medium">full-stack web development and cross-platform mobile apps</span>. Beyond coding, I serve as an IT Manager, handling complete technology infrastructures and maintaining robust systems for educational and corporate environments.
+              My expertise spans across <span className="text-slate-900 font-semibold">full-stack web applications, e-commerce platforms, and cross-platform mobile apps</span>. Beyond coding, I serve as an IT Manager, overseeing entire technology infrastructures and maintaining robust digital systems for institutions and enterprises.
             </p>
             <p>
-              As a mentor at <span className="text-white font-medium">Banoqabil Lahore</span>, I am passionate about bridging the gap between education and industry. I train students in modern web technologies, helping them build professional portfolios and succeed in the freelancing world.
+              As a mentor at <span className="text-slate-900 font-semibold">Banoqabil Lahore</span>, I am passionate about bridging the gap between academia and industry, training aspiring developers in modern web technologies and freelance career readiness.
             </p>
-            <p className="text-white font-bold text-xl pt-4 italic border-l-4 border-primary-500 pl-6">
-              "Focused on building real-world solutions and helping students become industry-ready developers."
+            <p className="text-slate-800 font-semibold text-lg italic border-l-4 border-emerald-500 pl-6 py-2 bg-emerald-50/60 rounded-r-2xl">
+              "Focused on engineering practical, high-impact digital solutions and empowering the next generation of software engineers."
             </p>
           </div>
 
@@ -43,29 +43,29 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glass-dark p-6 rounded-3xl border-white/5 hover:border-white/10 transition-all"
+                className="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-soft hover:shadow-soft-xl hover:border-emerald-300 transition-all group"
               >
-                <div className="p-3 bg-white/5 rounded-2xl w-fit mb-4">
+                <div className="p-3 bg-slate-50 border border-slate-100 rounded-2xl w-fit mb-4 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
-                <h4 className="text-white font-bold mb-2">{item.title}</h4>
-                <p className="text-sm text-slate-500">{item.desc}</p>
+                <h4 className="text-slate-900 font-bold mb-2">{item.title}</h4>
+                <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
 
         <div className="lg:col-span-2 relative">
-          <div className="aspect-square rounded-[3rem] overflow-hidden glass p-4 rotate-3 hover:rotate-0 transition-transform duration-700">
+          <div className="aspect-square rounded-[3rem] overflow-hidden bg-white border-8 border-white shadow-soft-2xl p-2 rotate-2 hover:rotate-0 transition-transform duration-700">
             <img 
               src={profilePic} 
               alt="Professional Portrait"
-              className="w-full h-full object-cover rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover rounded-[2.5rem] grayscale-[20%] hover:grayscale-0 transition-all duration-700"
             />
           </div>
           {/* Decorative elements */}
-          <div className="absolute -z-10 -top-8 -right-8 w-64 h-64 bg-primary-500/10 blur-3xl rounded-full" />
-          <div className="absolute -z-10 -bottom-8 -left-8 w-64 h-64 bg-emerald-500/10 blur-3xl rounded-full" />
+          <div className="absolute -z-10 -top-8 -right-8 w-64 h-64 bg-emerald-200/40 blur-3xl rounded-full" />
+          <div className="absolute -z-10 -bottom-8 -left-8 w-64 h-64 bg-teal-200/40 blur-3xl rounded-full" />
         </div>
       </div>
     </section>

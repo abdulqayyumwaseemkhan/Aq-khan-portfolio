@@ -26,7 +26,13 @@ export default {
         },
       },
       animation: {
-        'spin-slow': 'spin 8s linear infinite',
+        'spin-slow': 'spin 12s linear infinite',
+      },
+      boxShadow: {
+        'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+        'soft-lg': '0 10px 30px -4px rgba(15, 23, 42, 0.08)',
+        'soft-xl': '0 20px 40px -6px rgba(15, 23, 42, 0.08)',
+        'soft-2xl': '0 25px 55px -10px rgba(15, 23, 42, 0.12)',
       },
     },
   },

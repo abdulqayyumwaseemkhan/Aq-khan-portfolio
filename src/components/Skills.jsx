@@ -63,29 +63,31 @@ export default function Skills() {
   return (
     <section id="skills" className="py-12 space-y-16">
       <div className="text-center space-y-4">
-        <h2 className="text-4xl lg:text-5xl font-black text-white">Technical <span className="text-gradient">Arsenal</span></h2>
-        <p className="text-slate-400 max-w-2xl mx-auto">
-          Built on a foundation of industry-standard tools and cutting-edge technologies.
+        <h2 className="text-4xl lg:text-5xl font-black text-slate-900">
+          Technical <span className="text-gradient">Arsenal</span>
+        </h2>
+        <p className="text-slate-600 max-w-2xl mx-auto text-lg">
+          A comprehensive suite of modern frameworks, programming languages, and industry-standard tools.
         </p>
       </div>
 
       <div className="space-y-12">
         {skillCategories.map((category, idx) => (
           <div key={idx} className="space-y-6">
-            <h3 className="text-xl font-bold text-slate-300 ml-4 border-l-4 border-primary-500 pl-4">
+            <h3 className="text-xl font-bold text-slate-800 ml-2 border-l-4 border-emerald-500 pl-4">
               {category.title}
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {category.skills.map((skill, i) => (
                 <motion.div
                   key={i}
-                  whileHover={{ scale: 1.05, translateY: -5 }}
-                  className="glass-dark p-6 rounded-3xl flex flex-col items-center justify-center gap-4 group hover:border-primary-500/50 transition-all duration-300"
+                  whileHover={{ scale: 1.05, translateY: -4 }}
+                  className="bg-white p-6 rounded-3xl flex flex-col items-center justify-center gap-3 border border-slate-200/80 shadow-soft hover:shadow-soft-xl hover:border-emerald-400/80 transition-all duration-300 group"
                 >
                   <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
                     {skill.icon}
                   </div>
-                  <span className="text-xs font-bold text-slate-400 group-hover:text-white uppercase tracking-widest text-center">
+                  <span className="text-xs font-bold text-slate-600 group-hover:text-slate-900 uppercase tracking-wider text-center">
                     {skill.name}
                   </span>
                 </motion.div>

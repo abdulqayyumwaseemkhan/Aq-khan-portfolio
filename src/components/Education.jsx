@@ -24,15 +24,18 @@ const education = [
 
 export default function Education() {
   return (
-    <section id="education" className="space-y-12">
-      <div className="space-y-4">
-        <h2 className="text-3xl lg:text-4xl font-bold text-white flex items-center gap-3">
-          <GraduationCap className="text-primary-500" /> Education
+    <section id="education" className="space-y-8">
+      <div className="space-y-3">
+        <h2 className="text-3xl lg:text-4xl font-black text-slate-900 flex items-center gap-3">
+          <div className="p-2.5 rounded-2xl bg-emerald-50 text-emerald-600 border border-emerald-200">
+            <GraduationCap size={24} />
+          </div>
+          Education
         </h2>
-        <div className="h-1 w-20 bg-primary-500 rounded-full" />
+        <div className="h-1 w-20 bg-emerald-500 rounded-full" />
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-6">
         {education.map((item, i) => (
           <motion.div
             key={i}
@@ -40,20 +43,19 @@ export default function Education() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="relative pl-8 border-l-2 border-slate-800 hover:border-primary-500/50 transition-colors"
+            className="group bg-white p-6 lg:p-8 rounded-3xl border border-slate-200/80 shadow-soft hover:shadow-soft-lg transition-all border-l-4 border-l-teal-500"
           >
-            <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-slate-900 border-2 border-slate-800 group-hover:bg-primary-500 transition-colors" />
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 text-primary-400 text-sm font-semibold uppercase tracking-wider">
-                <Calendar size={14} /> {item.period}
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 text-emerald-700 text-xs font-bold uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-full w-fit border border-emerald-200">
+                <Calendar size={13} className="text-emerald-600" /> {item.period}
               </div>
-              <h3 className="text-xl font-bold text-white leading-tight">
+              <h3 className="text-xl font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
                 {item.title}
               </h3>
-              <p className="text-slate-400 font-medium">
+              <p className="text-slate-600 font-medium">
                 {item.institution}
               </p>
-              <p className="text-sm text-slate-500 mt-2">
+              <p className="text-sm text-slate-500 mt-1 leading-relaxed">
                 {item.description}
               </p>
             </div>
