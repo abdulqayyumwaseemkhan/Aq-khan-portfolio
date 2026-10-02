@@ -1,4 +1,5 @@
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight, Sparkles, Globe, Clock, CheckCircle2 } from "lucide-react";
 
@@ -17,6 +18,16 @@ import kissanpartsImg from "../assets/kissanparts.png";
 const categories = ["All", "Live Domains", "E-Commerce", "MERN Stack", "Mobile Apps", "Portals"];
 
 const projects = [
+  {
+    title: "Doodiya",
+    category: "Mobile Apps",
+    url: "https://play.google.com/store/search?q=doodiya",
+    isApp: true,
+    isLiveApp: true,
+    tags: ["Live on Play Store", "React Native", "Mobile App", "Management System"],
+    desc: "A proper milkman management system mobile application, currently live on the Google Play Store. It facilitates daily milk delivery records, billing, and customer management.",
+    image: livestockImg,
+  },
   {
     title: "CreateXcore.com — ATS CV & Resume Builder",
     category: "MERN Stack",
@@ -215,6 +226,14 @@ export default function Projects() {
                     Mobile App
                   </div>
                 )}
+
+                {/* Live App Badge */}
+                {project.isLiveApp && (
+                  <div className="absolute top-5 left-5 px-3.5 py-1.5 rounded-full bg-blue-600 text-white text-[11px] font-bold uppercase tracking-wider shadow-md flex items-center gap-1.5 backdrop-blur-md">
+                    <span className="w-2 h-2 rounded-full bg-white animate-ping" />
+                    Live on Play Store
+                  </div>
+                )}
               </div>
 
               {/* Content Area */}
@@ -254,7 +273,7 @@ export default function Projects() {
                     <div className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-amber-50 text-amber-800 font-bold text-sm border border-amber-200 cursor-default">
                       <Clock size={16} /> Currently Working / Coming Soon
                     </div>
-                  ) : project.isApp ? (
+                  ) : project.isApp && !project.isLiveApp ? (
                     <div className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-slate-100 text-slate-500 font-bold text-sm border border-slate-200 cursor-default">
                       Mobile App (Coming Soon)
                     </div>
@@ -266,12 +285,12 @@ export default function Projects() {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       className={`flex-1 flex items-center justify-center gap-2 py-3.5 rounded-2xl font-bold text-sm transition-all shadow-soft ${
-                        project.isLiveDomain
+                        project.isLiveDomain || project.isLiveApp
                           ? "bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/30 hover:shadow-emerald-600/40"
                           : "bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-600/20"
                       }`}
                     >
-                      {project.isLiveDomain ? `Visit ${project.title}` : "Live Preview"} <ExternalLink size={16} />
+                      {project.isLiveDomain ? `Visit ${project.title}` : project.isLiveApp ? "View on Play Store" : "Live Preview"} <ExternalLink size={16} />
                     </motion.a>
                   )}
                   
