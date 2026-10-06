@@ -39,16 +39,6 @@ const projects = [
     image: cvbuilderImg,
   },
   {
-    title: "WellGrow.pk",
-    category: "E-Commerce",
-    url: "https://wellgrow.pk",
-    isLiveDomain: true,
-    featured: true,
-    tags: ["Live Domain", "Health & Supplements", "Dietitian Appointments", "MERN Stack"],
-    desc: "A full-scale health & wellness e-commerce platform for nutritional supplements integrated with an online dietitian appointment booking and consultation management system.",
-    image: wellgrowImg,
-  },
-  {
     title: "MustaqeemFarms.com",
     category: "E-Commerce",
     url: "https://mustaqeemfarms.com",
